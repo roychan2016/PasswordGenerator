@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卡号:"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/bank_card_id"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:hint="请输入银行卡号"
+            android:textColorHint="#A1A1A1"
+            android:textSize="20sp"/>
+        <ImageView
+            android:id="@+id/bank_card_scan"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/camera"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/password_create"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonbg"
+        android:text="密码生成"
+        android:textSize="20sp"
+        android:textColor="#FFFFFFFF"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="XX787878"
+        android:textColor="#000000"
+        android:textSize="40sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(XX表示两位自己设置的前缀)"
+        android:textSize="13sp"/>
+
+</LinearLayout>
